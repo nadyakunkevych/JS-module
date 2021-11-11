@@ -27,7 +27,7 @@
 
   let w = 10;
   let h = 23;
-  let s = Math.sqrt((Math.sqrt(w))*Math.sqrt(h));
+  let s = Math.abs(w)*Math.abs(h)
   console.log(s)
 
   // 6. Напиши код, який знаходить об'єм циліндра заввишки 10м (змінна heightC) та діаметром основи 4м (dC),
@@ -35,8 +35,8 @@
 
   let heightC = 10;
   let dC = 4;
-  let S = Math.sqrt((Math.sqrt(dC))*Math.sqrt(dC));
-  let v = Math.sqrt((Math.sqrt(S))*Math.sqrt(dC));
+  let П = 3.14
+  let v = Math.abs(П)*Math.pow(dC, 2)*Math.abs(heightC)
   console.log(v)
 
   // 7. У прямокутного трикутника дві сторони n (зі значенням 3) та m (зі значенням 4).
@@ -44,7 +44,7 @@
 
   let n = 3;
   let m = 4;
-  let k = Math.sqrt(Math.sqrt(n,2)+Math.sqrt(m,2));
+  let k = (Math.pow(n,2) + Math.pow(m,2));
   console.log(k)
 
 </script>
