@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Classwork 1<</title>
+</head>
+<body>
+
+<script>
+  // 4. Створити масив об'єктів book з наступними полями  - назва, кількість сторінок, жанр, автори. Вивести кожну книгу як окремий об'єкт
+
+    let book = [{ title: "It", pageNumber: 1138, genre: "horror", author:"Steven King"},
+      { title: "The Alchemist", pageNumber: 166, genre: "fantasy", author:"Paulo Coelho"},
+      { title: "Notebook", pageNumber: 214, genre: "romance", author:"Nicholas Sparks"}]
+
+    console.log(book[0])
+    console.log(book[1])
+    console.log(book[2])
+
+    // console.log(book [0].title)
+    // console.log(book[1].title)
+    // console.log(book[2].title)
+
+  // 5. Напишіть код, який вираховує площу прямокутника висотою 23см. (змінна height) та шириною 10см (змінна width).
+  // Значення площі зберігати в змінній s.
+
+
+  let w = 10;
+  let h = 23;
+  let s = Math.sqrt((Math.sqrt(w))*Math.sqrt(h));
+  console.log(s)
+
+  // 6. Напиши код, який знаходить об'єм циліндра заввишки 10м (змінна heightC) та діаметром основи 4м (dC),
+  // результат помістіть у змінну v.
+
+  let heightC = 10;
+  let dC = 4;
+  let S = Math.sqrt((Math.sqrt(dC))*Math.sqrt(dC));
+  let v = Math.sqrt((Math.sqrt(S))*Math.sqrt(dC));
+  console.log(v)
+
+  // 7. У прямокутного трикутника дві сторони n (зі значенням 3) та m (зі значенням 4).
+  // Знайдіть гіпотенузу k за теоремою Піфагора (потрібно використовувати функцію Math.pow (число, ступінь) або оператор зведення в ступінь **).
+
+  let n = 3;
+  let m = 4;
+  let k = Math.sqrt(Math.sqrt(n,2)+Math.sqrt(m,2));
+  console.log(k)
+
+</script>
+
+
+
+</body>
+</html>
