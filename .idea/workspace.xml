@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="694c7ab5-8275-476a-a10c-669b05db68c3" name="Default Changelist" comment="update hm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js_classwork_1.2.html" beforeDir="false" afterPath="$PROJECT_DIR$/js_classwork_1.2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js_hm_1.3.html" beforeDir="false" afterPath="$PROJECT_DIR$/js_hm_1.3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js_hm_1.5.html" beforeDir="false" afterPath="$PROJECT_DIR$/js_hm_1.5.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +67,7 @@
       <workItem from="1636583201957" duration="3437000" />
       <workItem from="1636618184356" duration="7905000" />
       <workItem from="1636626940726" duration="3226000" />
-      <workItem from="1636651949083" duration="12911000" />
+      <workItem from="1636651949083" duration="14223000" />
     </task>
     <task id="LOCAL-00001" summary="update hm">
       <created>1636625658208</created>
@@ -117,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636663232346</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update hm">
+      <created>1636664950276</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1636664950277</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,5 +146,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update hm" />
     <option name="LAST_COMMIT_MESSAGE" value="update hm" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js_hm_1.5.html</url>
+          <line>16</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
