@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="694c7ab5-8275-476a-a10c-669b05db68c3" name="Default Changelist" comment="update hm">
-      <change beforePath="$PROJECT_DIR$/js_classwork_1.2.html" beforeDir="false" afterPath="$PROJECT_DIR$/js_classwork_1.2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js_classwork_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/js_classwork_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js_hm_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/js_hm_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +71,7 @@
       <workItem from="1636666968983" duration="426000" />
       <workItem from="1636668500108" duration="103000" />
       <workItem from="1636668799224" duration="313000" />
-      <workItem from="1636703902898" duration="2258000" />
+      <workItem from="1636703902898" duration="2629000" />
     </task>
     <task id="LOCAL-00001" summary="update hm">
       <created>1636625658208</created>
@@ -173,7 +171,21 @@
       <option name="project" value="LOCAL" />
       <updated>1636705661211</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update hm">
+      <created>1636706176136</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1636706176136</updated>
+    </task>
+    <task id="LOCAL-00016" summary="update hm">
+      <created>1636706420608</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1636706420608</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,16 +207,5 @@
     <MESSAGE value="update hmm" />
     <MESSAGE value="update hm" />
     <option name="LAST_COMMIT_MESSAGE" value="update hm" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js_hm_1.5.html</url>
-          <line>17</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
