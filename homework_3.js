@@ -100,3 +100,60 @@
     //     }
     // }
 
+//
+// 5.- Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. Вивести в консоль всі його елементи в циклі.
+// - Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+// - Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+// - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
+// - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
+// - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
+
+    // let empty = [];
+    // empty [0] = -10;
+    // empty [1] = 2;
+    // empty [2] = -1;
+    // empty [3] = "text1"
+    // empty [4] = "text2"
+    // empty [5] = "text3"
+    // empty [6] = 10 === 10;
+    // empty [7] = 10 < 5;
+    // empty [8] = 5 !== 10;
+    // empty [9] = 17;
+    //
+    // for(let i = 0; i < empty.length; i++) {
+    //     console.log(empty[i])
+    // }
+    //
+//
+// for (let i = 1; i <= 10; i++) {
+//     console.log("current cycle number : " + i + " ");
+//     document.write("current cycle number : " + i + " ")
+//
+// // }
+//     for (let i = 1; i <= 100; i++) {
+//     console.log("cycle : " + i + " ");
+//     document.write("cycle : " + i + " ")
+//
+// }
+
+    // for (let i = 1; i <= 100; i+=2) {
+    // console.log("cycle : " + i + " ");
+    //     document.write("cycle : " + i + " ")
+    //
+    // }
+    //
+
+    // for (let i = 1; i <= 100; i++) {
+    //     if (i % 2 === 0) {
+    //         console.log("cycle : " + i + " ");
+    //         document.write("cycle : " + i + " ")
+    //
+    //     }
+    // }
+
+    for(let i = 1; i<= 100; i++) {
+        if(i % 2 !== 0) {
+            console.log("cycle : " + i + " ")
+            document.write("cycle : + i + " )
+        }
+    }
