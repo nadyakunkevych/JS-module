@@ -64,8 +64,32 @@
 // 5. Створити функцію яка створює параграф з текстом. Текст задати через аргумент
 
 
+//     function paragraph (text) {
+//     document.write(`<p>${text}</p>`);
 //
+// }
+//     paragraph("Welcome to Okten :)");
+
+
 // 6. створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
+//         function ul (days) {
+//         document.write(`<ul>`)
+//             document.write(`<li> ${days} </li>`)
+//             document.write(`<li> ${days} </li>`)
+//             document.write(`<li>${days}</li>`)
+// }
+//         document.write(`</ul>`)
+//
+//         ul("Homework")
+//
+//     function ul (days) {
+//         document.write(`<li> ${days} </li>`)
+//             document.write(`<li> ${days} </li>`)
+//             document.write(`<li>${days}</li>`)
+//     }
+//
+//         ul("Homework") - а такий запис прийнятний?
+
 // 7. створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 // 8. створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 //
