@@ -6,12 +6,12 @@
 //     console.log(s(4, 6));  - цей запис вірний? Моя первісна думка була, що так має бути
 //
 // or:
-
-    // function rectangle (a, b) {
-    // let s = a * b;
-    // return s;
-    // }
-    // console.log(rectangle(4, 6))
+//
+//     function rectangle (a, b) {
+//     let s = a * b;
+//     return s;
+//     }
+//     console.log(rectangle(4, 6))
 
 
    // 2. Створити функцію яка обчислює та повертає площу кола з радіусом r
