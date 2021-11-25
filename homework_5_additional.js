@@ -1,25 +1,17 @@
 // 1. Дано натуральное число n. Выведите все числа от 1 до n.
 
+    // let array = [1, 2, 3, 4, 5, 6, 7, 8];
 
-//      let number = (n) => {
-//          if (n <= 9) {
-//              for (let i = 0; i <= n.length; i++) {
-//
-//              }
-//              return n;
-//          }
-//      }
-// console.log(number(1))
-// console.log(number(2))
-// console.log(number(3))
-// console.log(number(4))
-// console.log(number(5))
-// console.log(number(6))
-// console.log(number(7))
-// console.log(number(8))
-// console.log(number(9))
-//
-
+    //         // for(let i = 0; i < n.length; i++) {
+    //             let array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    //             let n = 9;
+    //             for(const elements of array) {
+    //                 if(n <= 9) {
+    //                 }
+    //                     console.log(elements)
+    // }
+    //
+    //
 
 
 // 2. Даны два целых числа A и В . Выведите все числа от A до B включительно, в порядке возрастания, если A < B, или в порядке убывания в противном случае.
