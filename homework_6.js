@@ -89,7 +89,16 @@
 
 //
 // 8.Напишіть функцію, яка приймає рядок як аргумент і перетворює регістр першого символу рядка з нижнього регістру у верхній.
-//
-//
-//
+// //
+//     let acceptStr = (str) => {
+//     return str[0].toUpperCase() + str.slice(1)
+//     }
+//     console.log(acceptStr("lecture 6 is dedicated to string and array methods"))
+
+
 // 9. Напишіть функцію capitalize(str), яка повертає рядок, у якому кожне слово починається з великої літери.
+
+    // let capitalize = (str) => {
+    // return str.toUpperCase()
+    // }
+    // console.log(capitalize("happy thanksgiving to you and your loved ones!"))
