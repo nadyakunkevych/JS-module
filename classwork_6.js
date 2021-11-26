@@ -70,6 +70,19 @@
 
 // 5.створити масив рандомних цілих числових значень (або згенерувати, за допомоги попередньої функції) . за допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
 
+// let randomNums = (a, b) => {
+//     let array = []
+//         for(let i = 0; i < b;) {
+//           array.push(Math.round(Math.random()*a))
+//         }
+//
+//         return array.map(value => value.toString());
+//
+//     }
+//
+// //
+//     randomNums(1, 100)
+
 
 // 6. створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
 //     let nums = [11,21,3];
@@ -106,16 +119,22 @@
 // -- відсортувати його за спаданням за monthDuration
 // -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
 
-let coursesAndDurationArray = [
-    {title: 'JavaScript Complex', monthDuration: 5},
-    {title: 'Java Complex', monthDuration: 6},
-    {title: 'Python Complex', monthDuration: 6},
-    {title: 'QA Complex', monthDuration: 4},
-    {title: 'FullStack', monthDuration: 7},
-    {title: 'Frontend', monthDuration: 4}]
+// let coursesAndDurationArray = [
+//     {title: 'JavaScript Complex', monthDuration: 5},
+//     {title: 'Java Complex', monthDuration: 6},
+//     {title: 'Python Complex', monthDuration: 6},
+//     {title: 'QA Complex', monthDuration: 4},
+//     {title: 'FullStack', monthDuration: 7},
+//     {title: 'Frontend', monthDuration: 4}]
+//
+//     let sort = coursesAndDurationArray.sort((x, y) => x.monthDuration - y.monthDuration);
+//
+//
+// console.log(sort);
 
-    let sort = coursesAndDurationArray.sort((a, b) => b.monthDuration - a.monthDuration);
-
-}
-console.log(sort);
-
+//  let filter = coursesAndDurationArray.filter(value => {
+//      if(value.monthDuration > 5) {
+//          return value.monthDuration;
+//      }
+//  })
+// console.log(filter)
