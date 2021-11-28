@@ -1,20 +1,16 @@
 // 1. Знайти та вивести довижину настипних стрінгових значень
 // 'hello world', 'lorem ipsum', 'javascript is cool'
 
-    // let str = "hello world";
-    // for(const strElement of str) {
-    //     console.log(strElement)
-    // }
+    let str1 = "hello world";
+        console.log(str1.length);
 
-    // let str = "lorem ipsum";
-    // for(const strElement of str) {
-    //     console.log(strElement)
-    // }
+    let str2 = "lorem ipsum";
+        console.log(str2.length)
 
-    // let str = "java script is cool";
-    // for(const strElements of str) {
-    //     console.log(strElements)
-    // }
+    let str3 = "java script is cool";
+    console.log(str3.length)
+
+
 
 // 2. - Перевести до великого регістру наступні стрінгові значення
 // 'hello world', 'lorem ipsum', 'javascript is cool'
@@ -79,13 +75,23 @@
 //     console.log(delete_characters)
 // //
 
-// 7. Напишіть функцію insert_dash(str), яка приймає рядок str як аргумент і вставляє тире (-) між словами. При цьому всі символи рядка необхідно перевести у верхній регістр.
+// 7. Напишіть функцію insert_dash(str), яка приймає рядок str як аргумент і вставляє тире (-) між словами.
+// При цьому всі символи рядка необхідно перевести у верхній регістр.
 //     let str = "HTML JavaScript PHP";
-// document.writeln(insert_dash(str)); // 'HTML-JAVASCRIPT-PHP'
+//     document.writeln(insert_dash(str)); // 'HTML-JAVASCRIPT-PHP'
 
     // let str = "HTML JavaScript PHP";
     // let insert_dash = str.substr(0, 4) + "-" + str.substr(5,10) +"-" + str.substr(15, 10)
-    // console.log(insert_dash)
+    //
+
+    let insert_dash = (str) => {
+    let addDash = str.split(" ").join("-").toUpperCase();
+     return addDash;
+}
+    let str = "HTML JavaScript PHP";
+    console.log(insert_dash(str));
+
+
 
 //
 // 8.Напишіть функцію, яка приймає рядок як аргумент і перетворює регістр першого символу рядка з нижнього регістру у верхній.
@@ -97,8 +103,9 @@
 
 
 // 9. Напишіть функцію capitalize(str), яка повертає рядок, у якому кожне слово починається з великої літери.
+//
+    let capitalize = (str) => {
+    return str.split(" ").map(word => word.charAt(0).toUpperCase()+word.slice(1)).join(" ");
+    }
+    console.log(capitalize("happy thanksgiving to you and your loved ones!"))
 
-    // let capitalize = (str) => {
-    // return str.toUpperCase()
-    // }
-    // console.log(capitalize("happy thanksgiving to you and your loved ones!"))

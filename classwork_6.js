@@ -84,7 +84,7 @@
 //     randomNums(1, 100)
 
 
-// 6. створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
+// 6. створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меншого, або навпаки в залежності від значення аргументу direction.
 //     let nums = [11,21,3];
 // sortNums('ascending') // [3,11,21]
 // sortNums('descending') // [21,11,3]
@@ -105,6 +105,20 @@
 //     }
 // }
 // sortNums("ascending")
+
+
+
+    let sortNums = (array, direction ) => {
+        if (direction === "ascending")
+            return array.sort((a, b) => a - b);
+            if (direction === "descending")
+                return array.sort((a, b) => b - a);
+
+
+    }
+console.log(sortNums[11, 21, 3])
+
+
 
 
 // 7. - є масив
