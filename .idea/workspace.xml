@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="694c7ab5-8275-476a-a10c-669b05db68c3" name="Default Changelist" comment="update hm">
-      <change afterPath="$PROJECT_DIR$/homework_7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js_homework_7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classwork_7.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js_homework_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/js_homework_7.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,14 +99,7 @@
       <workItem from="1637707711574" duration="4532000" />
       <workItem from="1637829062146" duration="9186000" />
       <workItem from="1637876669331" duration="11063000" />
-      <workItem from="1638118541323" duration="5934000" />
-    </task>
-    <task id="LOCAL-00003" summary="update hm">
-      <created>1636626642670</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1636626642670</updated>
+      <workItem from="1638118541323" duration="14859000" />
     </task>
     <task id="LOCAL-00004" summary="update hm">
       <created>1636626719050</created>
@@ -444,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637887968927</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="update hm">
+      <created>1638124711423</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1638124711424</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,6 +484,18 @@
           <url>file://$PROJECT_DIR$/homework_additional_4.js</url>
           <line>27</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/classwork_7.js</url>
+          <line>19</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/classwork_7.js</url>
+          <line>69</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
