@@ -6,11 +6,34 @@
 </head>
 <body>
 
-<p id="content">Have you ever tried sunflower seed butter? Its special taste won’t leave you aside, let alone its nutrition value. Sunflower seed butter became as popular as it had never been before due to being a great allergy-friendly alternative to tree nut butter.
+<p id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cupiditate deleniti
+  molestias mollitia pariatur porro saepe! Dolorem eaque earum eligendi, iste maxime molestias quam vitae.
+  Dolore hic in quae sed.
 </p>
-<p class="rules">  Homemade sunflower seed butter is better than store-bought as in the process of preparing you can control the sweetness to your taste and add any other additional ingredients.
-  In fact, making your own butter is as easy as one, two, three - it doesn’t take much time. Moreover, it would cost you much cheaper than buying from a regular store; you will have much more amount of product at practically the same price.
-</p>
+
+<div id="rules" class="fc bp">
+  Первое правило Бойцовского клуба: никому не рассказывать о Бойцовском клубе. Второе правило Бойцовского
+  клуба: никогда никому не рассказывать о Бойцовском клубе. Третье правило Бойцовского клуба: в схватке
+  участвуют только двое. Четвертое правило Бойцовского клуба: не более одного поединка за один раз
+</div>
+
+<ul>
+  <li class="fc_rules rule1">Первое правило Бойцовского клуба: никому не рассказывать о Бойцовском клубе.</li>
+  <li class="fc_rules rule2">Второе правило Бойцовского
+    клуба: никогда никому не рассказывать о Бойцовском клубе
+  </li>
+  <li class="fc_rules rule3">Третье правило Бойцовского клуба: в схватке
+    участвуют только двое.
+  </li>
+  <li class="fc_rules rule4">Четвертое правило Бойцовского клуба: не более одного поединка за один раз</li>
+</ul>
+
+
+
+
+
+
+
 <script>
   //  Напишіть код,  який за допомогою document.getElementById або document.getElementsByClassName або document.getElementsByTagName :
   // 1. отримує текст з параграфа з id "content"
@@ -18,15 +41,14 @@
   console.log(contentElement);
 
   // 2. отримує текст з блоку з id "rules"
-  let rulesElement = document.getElementsByClassName("rules");
-  console.log(rulesElement)
-
+  let rulesElement = document.getElementById("rules");
+  console.log(rulesElement);
 
   // 3. замініть текст параграфа з id 'content' на будь-який інший
-  contentElement.innerText = "What do you know about Sunflower Seed Butter?";
+  contentElement.innerText = "All Members and Guests must comply by these Club Rules at all times. Refusal or continual non-compliance with these Rules may result in the Club user being ejected from the premises and termination of Membership if applicable.";
 
   // 4. замініть текст параграфа з id 'rules' на будь-який інший
-  rulesElement.innerText = "What health benefits is sunflower seed butter best known for?"
+  rulesElement.innerText = "All Guests are required to provide photographic identification, and failure to provide this may result in the Guest being denied entry to the Club."
 
   // 5. змініть кожному елементу колір фону на червоний
   contentElement.style.backgroundColor = "red";
@@ -37,11 +59,14 @@
   rulesElement.style.color = "blue";
 
   // 7. отримати весь список класів елемента з id=rules і вивести їх в console.log
+  let allList = document.getElementsByClassName("fc bp");
+  console.log(allList);
 
   // 8. поміняти колір тексту у всіх елементів fc_rules на червоний
 
-
-
+  let changeColor = document.getElementsByClassName("fc_rules rule1");
+  console.log(changeColor);
+  changeColor.style.color = "red";
 
 
 
