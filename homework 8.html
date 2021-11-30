@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<p id="content">Have you ever tried sunflower seed butter? Its special taste won’t leave you aside, let alone its nutrition value. Sunflower seed butter became as popular as it had never been before due to being a great allergy-friendly alternative to tree nut butter.
+</p>
+<p class="rules">  Homemade sunflower seed butter is better than store-bought as in the process of preparing you can control the sweetness to your taste and add any other additional ingredients.
+  In fact, making your own butter is as easy as one, two, three - it doesn’t take much time. Moreover, it would cost you much cheaper than buying from a regular store; you will have much more amount of product at practically the same price.
+</p>
+<script>
+  //  Напишіть код,  який за допомогою document.getElementById або document.getElementsByClassName або document.getElementsByTagName :
+  // 1. отримує текст з параграфа з id "content"
+  let contentElement = document.getElementById("content");
+  console.log(contentElement);
+
+  // 2. отримує текст з блоку з id "rules"
+  let rulesElement = document.getElementsByClassName("rules");
+  console.log(rulesElement)
+
+
+  // 3. замініть текст параграфа з id 'content' на будь-який інший
+  contentElement.innerText = "What do you know about Sunflower Seed Butter?";
+
+  // 4. замініть текст параграфа з id 'rules' на будь-який інший
+  rulesElement.innerText = "What health benefits is sunflower seed butter best known for?"
+
+  // 5. змініть кожному елементу колір фону на червоний
+  contentElement.style.backgroundColor = "red";
+  rulesElement.style.backgroundColor = "red";
+
+  // 6. змініть кожному елементу колір тексту на синій
+  contentElement.style.color = "blue";
+  rulesElement.style.color = "blue";
+
+  // 7. отримати весь список класів елемента з id=rules і вивести їх в console.log
+
+  // 8. поміняти колір тексту у всіх елементів fc_rules на червоний
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
