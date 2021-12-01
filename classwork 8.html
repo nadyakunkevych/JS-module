@@ -36,7 +36,7 @@
   // a) змінює колір тексту елемнту з ід main_header на назву групи в якій ви вчитесь (mon-year)
 
   let mainId = document.getElementById("main_header");
-  mainId.innerText = "Java Script Complex 12/21"
+  mainId.innerText = "Java Script Complex 12/21";
 
   //
   // // b) робить шириниу елементу ul 400px
@@ -68,7 +68,7 @@
     }
     // f) отримує всі елементи 'a' та додає їм клас anchor
       let getA = document.getElementsByClassName("anchor");
-    for (const aElement of getA) {
+      for (const aElement of getA) {
       console.log(aElement)
 
     }
@@ -77,6 +77,7 @@
 
 
     // h) отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
+
     // i) отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
     // let getSubheader = document.getElementsByClassName("sub-header");
     // for (const subheaderElement of getSubheader) {
@@ -87,13 +88,19 @@
     // j) отримує всі елементи 'sub-header' та змінює колір тексту у видаку якщо текст елемнту = content 2 segment .
     // Колір отримати з prompt()
 
+      let getSubheader = document.getElementsByClassName("sub-header");
+      for (let i = 0; i < getSubheader.length; i++) {
+          const subheaderElement = getSubheader[i];
+          prompt(subheaderElement.style.color = "red")
+    }
+    //  *бачу, що тут має бути if, але воно мені інакше не спрацьовує. Під "текст-елементом" мається на увазі "text_segment text2"?
 
 
     // k) отримує елемент з класом content_1 та заміняє  в ньому текст на довільний. Текст отримати з prompt()
       let getContent1 = document.getElementsByClassName("content_1");
       let content_1 = getContent1[0];
-      content_1.getElementsByTagName("p")
-      prompt(content_1.innerHTML = "WELCOME TO OKTEN")
+      content_1.getElementsByTagName("p");
+      prompt(content_1.innerHTML = "WELCOME TO OKTEN");
 
 
     // l) отримати елементи p та змінити їм padding на 20px
