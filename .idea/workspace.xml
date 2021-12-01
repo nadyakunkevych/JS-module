@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="694c7ab5-8275-476a-a10c-669b05db68c3" name="Default Changelist" comment="update hm">
-      <change afterPath="$PROJECT_DIR$/classwork 8.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classwork 8.html" beforeDir="false" afterPath="$PROJECT_DIR$/classwork 8.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,14 +100,7 @@
       <workItem from="1637876669331" duration="11063000" />
       <workItem from="1638118541323" duration="19015000" />
       <workItem from="1638262935249" duration="5305000" />
-      <workItem from="1638312355088" duration="4558000" />
-    </task>
-    <task id="LOCAL-00010" summary="update hmm">
-      <created>1636666502137</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1636666502137</updated>
+      <workItem from="1638312355088" duration="7842000" />
     </task>
     <task id="LOCAL-00011" summary="update hm">
       <created>1636666556532</created>
@@ -445,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638314564640</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="update hm">
+      <created>1638317085945</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1638317085946</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -513,6 +513,12 @@
           <line>43</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/classwork 8.html</url>
+          <line>48</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
