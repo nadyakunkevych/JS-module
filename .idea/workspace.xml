@@ -100,14 +100,8 @@
       <workItem from="1637876669331" duration="11063000" />
       <workItem from="1638118541323" duration="19015000" />
       <workItem from="1638262935249" duration="5305000" />
-      <workItem from="1638312355088" duration="8578000" />
-    </task>
-    <task id="LOCAL-00012" summary="update hm">
-      <created>1636666682640</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1636666682640</updated>
+      <workItem from="1638312355088" duration="8642000" />
+      <workItem from="1638349804336" duration="2911000" />
     </task>
     <task id="LOCAL-00013" summary="update hm">
       <created>1636667380173</created>
@@ -445,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638320278110</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="update hm">
+      <created>1638320985759</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1638320985760</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,20 +506,36 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/homework 8.html</url>
           <line>44</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/classwork 8.html</url>
           <line>43</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/classwork 8.html</url>
-          <line>48</line>
+          <line>52</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="20" />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/classwork 8.html</url>
+          <line>67</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/classwork 8.html</url>
+          <line>63</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/classwork 8.html</url>
+          <line>73</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

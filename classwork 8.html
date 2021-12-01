@@ -8,8 +8,8 @@
 <h1 id="main_header">This is page for task2</h1>
 <ul>
   <li class="linkList listElement1"><a href="#" class="anchor">link1</a></li>
-  <li class="linkList listElement2"><a href="#">link2</a></li>
-  <li class="linkList listElement3"><a href="#">link3</a></li>
+  <li class="linkList listElement2"><a href="#" class="anchor">link2</a></li>
+  <li class="linkList listElement3"><a href="#" class="anchor">link3</a></li>
 </ul>
 <h3 class="sub-header">content 1 segment</h3>
 <div class="content_1">
@@ -38,67 +38,79 @@
   let mainId = document.getElementById("main_header");
   mainId.innerText = "Java Script Complex 12/21"
 
-
-  // b) робить шириниу елементу ul 400px
-
+  //
+  // // b) робить шириниу елементу ul 400px
+  //
   let ulChange = document.getElementsByTagName("ul");
   for (const ulChangeElement of ulChange) {
-  ulChangeElement.style.width = "400px";
-  ulChangeElement.style.backgroundColor = "orange";
-
-  }
-
-  // c) робить шириниу всіх елементів з класом linkList шириною 50%
-    let liChange = document.getElementsByClassName("linkList");
-    for (const liChangeElement of liChange) {
-    liChangeElement.style.width = "50%";
-    liChangeElement.style.backgroundColor = "brown"
-  }
+    ulChangeElement.style.width = "400px";
+    ulChangeElement.style.backgroundColor = "orange";
 
 
-  // d) отримує текст який зберігається в елементі з класом listElement2
+    //
+    // // c) робить шириниу всіх елементів з класом linkList шириною 50%
+      let liChange = document.getElementsByClassName("linkList");
+      for (const liChangeElement of liChange) {
+      liChangeElement.style.width = "50%";
+      liChangeElement.style.backgroundColor = "brown"
+    }
 
 
-  // e) отримує всі елементи li та змінює ім колір фону на сірий
-
-  let allLiElements = document.getElementsByClassName("linkList")
-  for (const allLiElement of allLiElements) {
-    allLiElement.style.backgroundColor = "grey"
-
-  }
-  // f) отримує всі елементи 'a' та додає їм клас anchor
+    // d) отримує текст який зберігається в елементі з класом listElement2
 
 
-  // g) отримує всі елементи 'a' та у випадку, якщо текстовий контен елементу дорівнює link3, змінює йому розмір тексту на 40 пікселів
+    // e) отримує всі елементи li та змінює ім колір фону на сірий
+
+    let allLiElements = document.getElementsByClassName("linkList")
+    for (const allLiElement of allLiElements) {
+      allLiElement.style.backgroundColor = "grey"
+
+    }
+    // f) отримує всі елементи 'a' та додає їм клас anchor
+      let getA = document.getElementsByClassName("anchor");
+    for (const aElement of getA) {
+      console.log(aElement)
+
+    }
+
+    // g) отримує всі елементи 'a' та у випадку, якщо текстовий контен елементу дорівнює link3, змінює йому розмір тексту на 40 пікселів
 
 
-  // h) отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
-  // i) отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
-  let getSubheader = document.getElementsByClassName("sub-header");
-  for (const subheaderElement of getSubheader) {
-    prompt(subheaderElement.style.backgroundColor = "gold")
-  }
+    // h) отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
+    // i) отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
+    // let getSubheader = document.getElementsByClassName("sub-header");
+    // for (const subheaderElement of getSubheader) {
+    //   prompt(subheaderElement.style.backgroundColor = "gold")
+    // }
 
 
-  // j) отримує всі елементи 'sub-header' та змінює колір тексту у видаку якщо текст елемнту = content 2 segment .
-  // Колір отримати з prompt()
-
-  // k) отримує елемент з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()
-
-  // l) отримати елементи p та змінити їм padding на 20px
-
-  let getP = document.getElementsByClassName("text_segment");
-  for (const pElement of getP) {
-    pElement.style.padding = "20px";
-  }
+    // j) отримує всі елементи 'sub-header' та змінює колір тексту у видаку якщо текст елемнту = content 2 segment .
+    // Колір отримати з prompt()
 
 
-  // m) отримати елементи з класом text2 та змінити їм текст на назву групи (mon-year. Пример sep-2021)
-  //
-  let getText2 = document.getElementsByClassName("text2");
-  for (const text2Element of getText2) {
-    text2Element.innerText = "Sep-2021"
 
+    // k) отримує елемент з класом content_1 та заміняє  в ньому текст на довільний. Текст отримати з prompt()
+      let getContent1 = document.getElementsByClassName("content_1");
+      let content_1 = getContent1[0];
+      content_1.getElementsByTagName("p")
+      prompt(content_1.innerHTML = "WELCOME TO OKTEN")
+
+
+    // l) отримати елементи p та змінити їм padding на 20px
+
+    let getP = document.getElementsByClassName("text_segment");
+    for (const pElement of getP) {
+      pElement.style.padding = "20px";
+    }
+
+
+    // m) отримати елементи з класом text2 та змінити їм текст на назву групи (mon-year. Пример sep-2021)
+    //
+    let getText2 = document.getElementsByClassName("text2");
+    for (const text2Element of getText2) {
+      text2Element.innerText = "Sep-2021"
+
+    }
   }
 
 
