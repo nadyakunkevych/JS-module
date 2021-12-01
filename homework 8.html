@@ -64,8 +64,11 @@
 
   // 8. поміняти колір тексту у всіх елементів fc_rules на червоний
 
-  let changeColor = document.getElementsByClassName("fc_rules rule1");
-  changeColor.style.color = "red";
+  let changeColor = document.getElementsByClassName("fc_rules");
+  for (const changeColorElement of changeColor) {
+    changeColorElement.style.color = "red";
+  }
+
 
 
 

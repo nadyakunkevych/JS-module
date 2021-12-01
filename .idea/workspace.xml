@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="694c7ab5-8275-476a-a10c-669b05db68c3" name="Default Changelist" comment="update hm">
-      <change beforePath="$PROJECT_DIR$/homework 8.html" beforeDir="false" afterPath="$PROJECT_DIR$/homework 8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classwork 8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -99,14 +100,7 @@
       <workItem from="1637876669331" duration="11063000" />
       <workItem from="1638118541323" duration="19015000" />
       <workItem from="1638262935249" duration="5305000" />
-      <workItem from="1638312355088" duration="2190000" />
-    </task>
-    <task id="LOCAL-00009" summary="update hm">
-      <created>1636666422387</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1636666422388</updated>
+      <workItem from="1638312355088" duration="4558000" />
     </task>
     <task id="LOCAL-00010" summary="update hmm">
       <created>1636666502137</created>
@@ -444,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638314240497</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="update hm">
+      <created>1638314564639</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1638314564640</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,6 +507,12 @@
           <line>44</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/classwork 8.html</url>
+          <line>43</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
