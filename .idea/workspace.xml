@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="694c7ab5-8275-476a-a10c-669b05db68c3" name="Default Changelist" comment="update hm">
-      <change afterPath="$PROJECT_DIR$/classwork_9.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_9.html" beforeDir="false" afterPath="$PROJECT_DIR$/homework_9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classwork_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/classwork_9.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,28 +104,8 @@
       <workItem from="1638349804336" duration="6412000" />
       <workItem from="1638474554115" duration="5390000" />
       <workItem from="1638522170360" duration="3386000" />
-      <workItem from="1638525606856" duration="9359000" />
-    </task>
-    <task id="LOCAL-00018" summary="update hm">
-      <created>1636735577930</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1636735577930</updated>
-    </task>
-    <task id="LOCAL-00019" summary="update hm">
-      <created>1636749660282</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1636749660282</updated>
-    </task>
-    <task id="LOCAL-00020" summary="update hm">
-      <created>1636822556956</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1636822556956</updated>
+      <workItem from="1638525606856" duration="9486000" />
+      <workItem from="1638570975862" duration="5247000" />
     </task>
     <task id="LOCAL-00021" summary="update hm">
       <created>1636846633535</created>
@@ -450,7 +429,28 @@
       <option name="project" value="LOCAL" />
       <updated>1638530664582</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="update hm">
+      <created>1638537242882</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1638537242883</updated>
+    </task>
+    <task id="LOCAL-00068" summary="update hm">
+      <created>1638537269900</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1638537269901</updated>
+    </task>
+    <task id="LOCAL-00069" summary="update hm">
+      <created>1638537293159</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1638537293159</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +540,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/classwork_9.js</url>
           <line>69</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
