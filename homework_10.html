@@ -69,11 +69,44 @@
       getMenu.classList.toggle("show/hide")
     }
 
-//
-//  5. Создать список комментариев , пример объекта коментария -
-//  {title : 'lorem', body:'lorem ipsum dolo sit ameti'}.
-//          Вывести список комментариев в документ, каждый в своем блоке.
-//          Добавьте каждому комментарию по кнопке для сворачивания его body.
+
+ //
+ //
+ // 5. Создать список комментариев , пример объекта коментария -
+ // {title : 'lorem', body:'lorem ipsum dolo sit ameti'}.
+ //         Вывести список комментариев в документ, каждый в своем блоке.
+ //         Добавьте каждому комментарию по кнопке для сворачивания его body.
+
+
+    let list = [
+            {title : 'JavaScript', body:'founded in 1995'},
+            {title : 'Python', body:'founded in 1991'},
+            {title : 'Ruby', body:'founded in 1995'},
+              {title : 'Crystal', body:'founded in 2014'},
+            ]
+
+
+    let divMain = document.createElement("div");
+    for (const listElement of list) {
+    let div1 = document.createElement("h2");
+    div1.innerText = listElement.title;
+    let div2 = document.createElement("p");
+    div2.innerText = listElement.body;
+    let btn = document.createElement("button");
+    btn.innerText = "click";
+
+    btn.onclick = () => {
+    div2.classList.add("add");
+
+
+    }
+    divMain.append(div1, div2, btn);
+    }
+    document.body.appendChild(divMain)
+
+
+
+
 
 </script>
 
