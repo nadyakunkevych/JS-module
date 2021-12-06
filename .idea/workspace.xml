@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="694c7ab5-8275-476a-a10c-669b05db68c3" name="Default Changelist" comment="update hm">
-      <change afterPath="$PROJECT_DIR$/classwork 10.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classwork 10.html" beforeDir="false" afterPath="$PROJECT_DIR$/classwork 10.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,14 +107,7 @@
       <workItem from="1638525606856" duration="9486000" />
       <workItem from="1638570975862" duration="6707000" />
       <workItem from="1638729912653" duration="13514000" />
-      <workItem from="1638778781300" duration="3442000" />
-    </task>
-    <task id="LOCAL-00026" summary="update hm">
-      <created>1636977383476</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1636977383476</updated>
+      <workItem from="1638778781300" duration="8636000" />
     </task>
     <task id="LOCAL-00027" summary="update hm">
       <created>1637016292062</created>
@@ -452,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638740537944</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="update hm">
+      <created>1638782847530</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1638782847531</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
