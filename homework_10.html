@@ -3,7 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+
+
+  <style>
+    .menu.hidden ul {
+      display: none;
+    }
+
+    p.hide {
+      display: none;
+    }
+
+  </style>
+
 </head>
+
+
 <body>
 
 
@@ -17,13 +32,14 @@
 
   <div class="menu">
     <h2 class="title"> Organic dried fruit</h2>
-    <u>
+    <ul>
       <li> Mango </li>
       <li> Raisins </li>
       <li> Pineapple </li>
       <li> Bananas </li>
       <li> Kiwi </li>
-    </u>
+    </ul>
+
   </div>
 
 <script>
@@ -32,41 +48,42 @@
 // чтобы при клике на кнопку исчезал элемент с id="text".
 //
 
-    document.getElementById("text").onclick = function () {
-    document.getElementById("text").style.display = "none";
-  }
+  //   document.getElementById("text").onclick = function () {
+  //   document.getElementById("text").style.display = "none";
+  // }
 
 //  2. Создайте кнопку, при клике на которую, она будет скрывать сама себя.
-
-    let getButton = document.getElementById("hidden");
-    getButton.onclick = function () {
-    document.getElementById("text").hidden = true;
-  }
+//
+//     let getButton = document.getElementById("hidden");
+//     getButton.onclick = function () {
+//     document.getElementById("text").hidden = true;
+//   }
 
 //  3. створити інпут, який приймає вік людини та кнопку яка підтверджує дію.
 //  При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18,
 //  та повідомити про це користувача
 
-
-      f1.onsubmit = e => {e.preventDefault()
-      document.getElementById("text")
-      let age = document.getElementById("age").value
-      if(age < 18) {
-        alert("You are less than 18, so this page is forbidden for you :(")
-
-      }
-      else {
-      alert("As long as you are 18+, welcome at our website :)")
-
-}
-      }
+//
+//       f1.onsubmit = e => {e.preventDefault()
+//       document.getElementById("text");
+//       let age = document.getElementById("age").value
+//       if(age < 18) {
+//         alert("You are less than 18, so this page is forbidden for you :(")
+//
+//       }
+//       else {
+//       alert("As long as you are 18+, welcome at our website :)")
+//
+// }
+//       }
 
 //  4. Создайте меню, которое раскрывается/сворачивается при клике
 //
-    let getMenu = document.getElementsByClassName("menu")
-    let getTitle = document.getElementsByClassName("title")
+    let getMenu = document.querySelector(".menu");
+    let getTitle = getMenu.querySelector(".title");
+
     getTitle.onclick = function () {
-      getMenu.classList.toggle("show/hide")
+      getMenu.classList.toggle("hidden")
     }
 
 
@@ -96,7 +113,7 @@
     btn.innerText = "click";
 
     btn.onclick = () => {
-    div2.classList.add("add");
+    div2.classList.toggle("hide");
 
 
     }
