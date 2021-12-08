@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+
+
+<form action="someaction" id="f">
+ <input type="text" name="status">
+ <input type="checkbox" name="checkbox_one">
+  <input type="number" name="age">
+  <input type="checkbox" name="checkbox_two">
+  <input type="text" name="city">
+  <input type="checkbox" name="checkbox_three">
+  <button> click </button>
+
+</form>
+
+
+<!--<div class="carousel">-->
+<!--<div class="pic1"> <img src="https://scontent.fiev25-1.fna.fbcdn.net/v/t1.6435-9/139654902_2744552535767642_3508775285538156779_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=174925&_nc_ohc=uoSJ3vy2yBgAX8WkJ-1&tn=ANbh7cklKDwIicgu&_nc_ht=scontent.fiev25-1.fna&oh=3106ae91f14486b063a159b2ffc72622&oe=61D4777A" alt="NK"></div>-->
+<!--<div class="pic2"> <img src="https://scontent.fiev25-1.fna.fbcdn.net/v/t1.6435-9/132783385_2729398720616357_7631897585024233096_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=174925&_nc_ohc=8Ua1Aba9wOIAX-DHvaG&tn=ANbh7cklKDwIicgu&_nc_ht=scontent.fiev25-1.fna&oh=7de4fe0938a7c2146036b62e7c7ff42e&oe=61D5BC5A" alt="NK"></div>-->
+
+<!--<button class="arrow1">⇦</button>-->
+<!--<button class="arrow2">⇨</button>-->
+<!--</div>-->
+
+<script>
+
+  // -- взять массив пользователей
+  let usersWithAddress = [
+    {id:1,name: 'vasya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
+    {id:2,name: 'petya', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 1}},
+    {id:3,name: 'kolya', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 121}},
+    {id:4,name: 'olya', age: 28, status: false, address: {city: 'Ternopil', street: 'Shevchenko', number: 90}},
+    {id:5,name: 'max', age: 30, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 115}},
+    {id:6,name: 'anya', age: 31, status: false, address: {city: 'Kyiv', street: 'Shevchenko', number: 2}},
+    {id:7,name: 'oleg', age: 28, status: false, address: {city: 'Ternopil', street: 'Shevchenko', number: 22}},
+    {id:8,name: 'andrey', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 43}},
+    {id:9,name: 'masha', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 12}},
+    {id:10,name: 'olya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
+    {id:11,name: 'max', age: 31, status: true, address: {city: 'Ternopil', street: 'Shevchenko', number: 121}}
+  ];
+  // - Создать три чекбокса. Каждый из них активирует фильтр для вышеуказаного массива.
+  // Фильтры могут работать как вместе так и по отдельности.
+  // 1й - отфильтровывает пользователей со статусом false (осталяет со статусом false)
+  // 2й - оставляет старше 29 лет включительно
+  // 3й - оставляет тех у кого город киев
+  // Данные выводить в документ
+
+
+    let f = document.forms.f;
+    f.onsubmit = function (e) {
+        e.preventDefault();
+        let status = this.status.value;
+        let age = this.age.value;
+        let city = this.city.value;
+        console.log({status: status, age: age, city: city})
+        f.status.onclick = function () {
+            if (status.checked) {
+                console.log(usersWithAddress.filter(value => !value.status));
+            }
+        }
+
+        if (age.checked) {
+            usersWithAddress.filter((value) => {
+                if (age >= 29) {
+                    console.log(value.age)
+                }
+                if (city.checked) {
+                    usersWithAddress.filter((value) => {
+                        if (city === "Kyiv") {
+                            console.log(value.city)
+                        }
+
+
+                    })
+                }
+            })
+
+        }
+    }
+
+
+
+
+
+</script>
+
+</body>
+</html>
