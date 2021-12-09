@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 11</title>
+</head>
+<body>
+<form action="some" id="f">
+  <label> <input type="text" name="name"> </label>
+  <label> <input type="number" name="age"> </label>
+  <label><input type="checkbox" name="check"> </label>
+  <button name="btn"> click </button>
+</form>
+
+<hr>
+<form action="some" id="f2">
+  <label> <b> Model </b> <input type="text" name="model"> </label>
+  <label> <b>Type</b> <input type="text" name="type"> </label>
+  <label> <b>Volume </b> <input type="number" name="volume"> </label>
+  <button name="btn"> click </button>
+</form>
+
+
+<script>
+
+  // -створити форму з інпутами для name та age.
+  //         При відправці форми записати об'єкт в localstorage
+
+  let name = document.forms.f.name;
+  let age = document.forms.f.age;
+  let button = document.getElementsByClassName("btn");
+  let keyItem = "key";
+
+  let user = (n, a) => {
+    let userID = {
+      name: n,
+      age: a
+    }
+    localStorage.setItem(keyItem, JSON.stringify(userID))
+
+  }
+
+  button.onclick = () => {
+    user(name.value, age.value)
+  }
+
+  //
+  // -створити форму з інпутами для model,type та volume автівки.
+  //         при відпарвці форми об'єкти зберігаються в масиві в локальному сховищі.
+
+
+  let model = document.forms.f2.model;
+  let type = document.forms.f2.type;
+  let volume = document.forms.f2.volume;
+  let btn = document.getElementsByClassName("btn");
+  let key = "key";
+
+  let car = (m, t, v) => {
+    let arr= JSON.parse((localStorage.getItem(key)));
+
+    arr.push({m, t, v });
+    localStorage.setItem(key, JSON.stringify(arr));
+
+  }
+
+  btn.onclick = () => {
+    car(model.value, type.value, volume.value)
+  }
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
