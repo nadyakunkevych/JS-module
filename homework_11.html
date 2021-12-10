@@ -56,7 +56,7 @@
   let key = "key";
 
   let car = (m, t, v) => {
-    let arr= JSON.parse((localStorage.getItem(key)));
+    let arr = JSON.parse((localStorage.getItem(key)));
 
     arr.push({m, t, v });
     localStorage.setItem(key, JSON.stringify(arr));
