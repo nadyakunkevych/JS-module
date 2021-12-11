@@ -29,18 +29,25 @@
 //  Створити сторніку favorites.html при переході на яку потрібно вивест в документ
 //  всіх обраних на попередньому етапі.
 
-    let key = "favorite";
+    let favorite = "favorite";
     localStorage.setItem(favorite, JSON.stringify([]))
-for (const user of users) {
+    for (const user of users) {
     let div = document.createElement("div");
     div.className = "block"
     let text = document.createElement("div");
-    text.innerText = `Name: ${user.name}Age: ${user.age}Status: ${user.status}`
+    text.innerHTML= `<h4> Name: ${user.name} </h4> <h4> Age: ${user.age}
+    </h4> Status: ${user.status}</h4>`
     let button = document.createElement("button");
     button.innerText = "add to ♥";
     button.onclick = () => {
-        let key = JSON.parse(localStorage.getItem(favorite))
+        let key = JSON.parse(localStorage.getItem(favorite));
+        key.push(user);
+        localStorage.setItem(favorite, JSON.stringify(key));
+        button.disabled = true;
     }
+    text.appendChild(button);
+    div.appendChild(text);
+    document.body.appendChild(div)
 }
 
 </script>
