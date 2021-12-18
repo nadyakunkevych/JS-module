@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 14</title>
+</head>
+<body>
+
+<script>
+
+  function getUp(dailyRoutine = true) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if (dailyRoutine) {
+          resolve("Washing up and beauty treatments");
+        } else {
+          reject("Go sleeping for some 10 min at least")
+
+        }
+      }, 3)
+
+    })
+  }
+
+
+    function sport (running) {
+      return new Promise ((resolve, reject) => {
+        setTimeout(() => {
+          if(running) {
+            resolve("Exercising to keep fit")
+          }
+          else {
+            reject ("Too lazy to workout")
+          }
+        }, 300)
+      })
+
+
+  }
+
+  function breakfast (eating) {
+    return new Promise ((resolve, reject)=> {
+      setTimeout(() => {
+        if(eating) {
+          resolve("Making a healthy sandwich");
+        }
+        else {
+          reject("I am hungry")
+        }
+
+      }, 150)
+    })
+  }
+
+  function leisure (reading) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if (reading) {
+          resolve("Reading a book")
+        } else {
+          reject("Watching Youtube instead")
+        }
+      }, 3000)
+    })
+
+    function work(taxi) {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          if(taxi) {
+            resolve("Going to work")
+          }
+          else {
+            reject("Having a day off")
+          }
+        }, 2000)
+      })
+
+    }
+
+  }
+  getUp(true)
+  .then (start => {
+    console.log(start);
+
+    return sport("Exercising")
+
+  })
+
+  .then(workout => {
+    console.log(workout);
+
+    return breakfast("Yummy")
+
+  })
+     .then (eat => {
+       console.log(eat)
+
+       return leisure("Reading")
+     })
+
+
+
+  .catch(reason => {
+    console.log("error", reason)
+  })
+
+
+</script>
+
+</body>
+</html>
