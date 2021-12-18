@@ -28,8 +28,7 @@
         setTimeout(() => {
           if(running) {
             resolve("Exercising to keep fit")
-          }
-          else {
+          } else {
             reject ("Too lazy to workout")
           }
         }, 300)
@@ -43,8 +42,7 @@
       setTimeout(() => {
         if(eating) {
           resolve("Making a healthy sandwich");
-        }
-        else {
+        } else {
           reject("I am hungry")
         }
 
@@ -62,47 +60,75 @@
         }
       }, 3000)
     })
+  }
 
     function work(taxi) {
       return new Promise((resolve, reject) => {
         setTimeout(() => {
-          if(taxi) {
+          if (taxi) {
             resolve("Going to work")
-          }
-          else {
+          } else {
             reject("Having a day off")
           }
         }, 2000)
       })
-
     }
 
-  }
-  getUp(true)
-  .then (start => {
-    console.log(start);
+      function home(back) {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            if (back) {
+              resolve("Going home")
+            } else {
+              reject("Still working")
+            }
+          }, 300)
 
-    return sport("Exercising")
-
-  })
-
-  .then(workout => {
-    console.log(workout);
-
-    return breakfast("Yummy")
-
-  })
-     .then (eat => {
-       console.log(eat)
-
-       return leisure("Reading")
-     })
+        })
+      }
 
 
+        getUp(true)
+                .then(start => {
+                  console.log(start);
 
-  .catch(reason => {
-    console.log("error", reason)
-  })
+                  return sport("Exercising")
+
+                })
+
+                .then(workout => {
+                  console.log(workout);
+
+                  return breakfast("Yummy")
+
+                })
+                .then(eat => {
+                  console.log(eat)
+
+                  return leisure("Reading")
+                })
+
+                .then(job => {
+                  console.log(job);
+
+                  return work("Working hard")
+                })
+
+                .then(back => {
+                  console.log(back)
+
+                  return home("Going back")
+                })
+
+
+                .catch(reason => {
+                  console.log("error", reason)
+                })
+
+
+
+
+
 
 
 </script>
