@@ -17,7 +17,7 @@
           reject("Go sleeping for some 10 min at least")
 
         }
-      }, 3)
+      }, 400)
 
     })
   }
@@ -94,7 +94,7 @@
           } else {
             reject("Just watching")
           }
-        }, 200)
+        }, 400)
       })
       }
 
@@ -220,6 +220,31 @@
 
 
 
+//      code with async await
+
+
+        async function myRoutine() {
+
+        const getUp = await getUp(true);
+        const workout = await sport(getUp);
+        const eat = await breakfast(workout);
+        const read = await leisure(eat);
+        const job = await home (read);
+        const working = await work(job)
+        const learn = await study(working);
+        const okten = await homework(learn);
+        const revise = await check(okten);
+        const remarks = await sleeping(revise);
+        const sleep = await sleeping(remarks)
+
+        //
+        //   console.log(getUp)
+        //   console.log(workout);
+        // console.log(eat)
+
+        }
+
+         myRoutine()
 
 
 
