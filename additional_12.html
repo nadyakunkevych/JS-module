@@ -1,53 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Additional 13</title>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .main{
+      display: flex;
+      width: 1600px;
+      justify-content: center;
+      flex-direction: column;
+
+    }
+    .user{
+      display: flex;
+      flex-direction: column;
+      background: #bbdebb;
+      border-radius: 20px;
+      margin: 20px;
+      padding: 10px;
+      color: #090950;
+    }
+    .post{
+      display: flex;
+      flex-direction: column;
+      background: #9d9797;
+      border-radius: 20px;
+      margin: 20px;
+      padding: 10px;
+      color: #090950;
+    }
+
+    .comment{
+      display: flex;
+      flex-direction: column;
+      background: #d0b670;
+      border-radius: 20px;
+      margin: 20px;
+      padding: 10px;
+      color: #090950;
+    }
+  </style>
 </head>
 <body>
 
-
+</body>
 <script>
-  // - Імітуємо наповнення інтернет магазину товарами :
-  //         Створити форму з наступними полями :
-  //         - назва товару
-  // - кількість товару
-  // - ціна товару
-  // - картинка товару (посилання з інтернету)
-  // Зберігати товари в масив в локалсорадж. При збережені товару з форми,
-  // action не повинно відбуватись (preventDefault)
-  // створити елемент <a href='list.html'> На сторінку товарів</a>, та list.html,
-  // при переході на який відобразити на сторінці всі товари.
-  // На сторінці  list.html побудувати кнопку яка видаляє всі товари з корзини та локалстораджа.
-  //         До кожного товару додати кнопку, при кліку на яку з лс видаляється конкретний обраний  товар
 
+  /*  ADDITIONAL
+  1.
+  Отримати відповідь з цього ресурсу відповідь, та вивести в документ як в прикладі на занятті
+  https://jsonplaceholder.typicode.com/users
+  кожному елементу юзера створити кнопку, при клику на яку в окремий блок виводяться всі пости поточного юзера.
+  Кожному елементу post створити кнопку, при клику на яку в окремий блок виводяться всі коментарі поточного поста*/
 
+   fetch('https://jsonplaceholder.typicode.com/users')
+          .then (response => response.json())
+          .then (users => {
+            let mainDiv = document.createElement('div');
+            mainDiv.classList.add('main');
+            for (const user of users) {
+              let userDiv = document.createElement('div');
+              userDiv.classList.add('user');
+              userDiv.innerHTML = `
+            <h1>ID:${user.id}</h1>
+            <h1>NAME:${user.name}</h1>
+            <h1>USERNAME:${user.username}</h1>
+            <h1><ins>ADDRESS:</ins>
+                <p>
+                <br>STREET:${user.address.street}</br>
+                <br>SUITE:${user.address.suite}</br>
+                <br>CITY:${user.address.city}</br>
+                <br>ZIPCODE:${user.address.zipcode}</br>
+                <br><ins>GEO:</ins>
+                    <p>
+                    <br>lat:${user.address.geo.lat}</br>
+                    <br>lng:${user.address.geo.lng}</br>
+                    </p>
+                </br>
+                </p>
+            </h1>`
+              let btnPosts = document.createElement('button');
+              btnPosts.innerText = 'Вивести всі пости поточного користувача';
+              btnPosts.style.background = '#d8e4ef';
+              btnPosts.style.color = '#090950';
+              btnPosts.style.borderRadius = '10px';
 
+              userDiv.appendChild(btnPosts);
 
-  let products = document.createElement("form");
-  document.body.appendChild(products)
-  let itemTitle = document.createElement("input");
-  itemTitle.innerText = "title";
-  let itemNumber = document.createElement("input");
-  itemNumber.innerText = "number";
-  let itemPrice = document.createElement("input");
-  itemPrice.innerText = "number";
-  let img = document.createElement("img");
-  img.src = "data:image/jpeg;base64,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"
-  products.append(itemTitle, itemNumber, itemPrice, img)
+              btnPosts.onclick = function() {
+                fetch(`https://jsonplaceholder.typicode.com/users/${user.id}/posts`)
+              .then(response => response.json())
+                        .then(posts => {
+                          for (const post of posts) {
+                            let postDiv = document.createElement('div');
+                            postDiv.classList.add('post');
+                            postDiv.innerHTML = `
+                            <h2>ID:${post.id}</h2>
+                            <h2>TITLE:${post.title}</h2>
+                            <h2>BODY:${post.body}</h2>`
+                            let btnComments = document.createElement('button');
+                            btnComments.innerText = 'Вивести всі коментарі поточного поста';
+                            btnComments.style.background = '#e7dfd7'
+                            btnComments.style.color = '#13460b'
 
+                            btnPosts.disabled = true; // кнопка після першого натискання стає неактивною
 
-    let items = {"products": products,  "itemTitle":  itemTitle, "itemNumber": itemNumber,"itemPrice": itemPrice }
-    localStorage.setItem('items', JSON.stringify(items));
-    let retrievedObject = localStorage.getItem('items');
-    console.log('items', JSON.parse(retrievedObject));
+                            btnComments.onclick = function () {
+                              fetch(`https://jsonplaceholder.typicode.com/posts/${user.id}/comments/`)
+                            .then(response => response.json())
+                                      .then(comments => {
+                                        for (const comment of comments) {
+                                          let commentsDiv = document.createElement('div');
+                                          commentsDiv.classList.add('comment')
+                                          commentsDiv.innerHTML = `
+                                    <h3>postId:${comment.postId}</h3>
+                                    <h3>id:${comment.id}</h3>
+                                    <h3>name:${comment.name}</h3>
+                                    <h3>email:${comment.email}</h3>
+                                    <h3>body:${comment.body}</h3>`
+                                          postDiv.appendChild(commentsDiv);
+                                        }
+                                        btnComments.disabled = true; // кнопка після першого натискання стає неактивною
+                                      })
+                            }
+                            postDiv.appendChild(btnComments);
+                            userDiv.appendChild(postDiv);
+                          }
+
+                        })
+              }
+              mainDiv.appendChild(userDiv);
+              document.body.appendChild(mainDiv);
+            }
+          })
 
 
 </script>
-
-
-
-
-
-</body>
 </html>
+

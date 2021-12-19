@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini-Project</title>
+
+
+  <style>
+    .main{
+      display: flex;
+      width: 400px;
+      justify-content: center;
+      flex-direction: column;
+
+    }
+    .user{
+      display: flex;
+      flex-direction: column;
+      background: #bbdebb;
+      border-radius: 20px;
+      margin: 20px;
+      padding: 10px;
+      color: #090950;
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+
+<script>
+//   В index.html
+//   1 получить массив объектов user с endpoint`а https://jsonplaceholder.typicode.com/users
+// 2 Вывести id,name всех user в index.html. Отдельный блок для каждого user.
+// 3 Добавить каждому блоку кнопку/ссылку ,
+// при клике на которую происходит переход на страницу user-details.html,
+// которая имеет детальную информацию про объект на который кликнули
+
+
+  fetch ("https://jsonplaceholder.typicode.com/users")
+          .then((response) => response.json())
+          .then(usersArray => {
+            let mainDiv = document.createElement("div")
+            mainDiv.classList.add("main")
+            for (const usersArrayElement of usersArray) {
+              let userDiv = document.createElement("div");
+              userDiv.innerHTML =
+                      `ID:${usersArrayElement.id}
+                      <br>NAME:${usersArrayElement.name}</br>`
+              userDiv.classList.add("user")
+              let btnDetails = document.createElement("button");
+              btnDetails.innerText = "click for details";
+
+              btnDetails.onclick = function () {
+                document.location.href = "user-details.html"
+
+              }
+
+              userDiv.appendChild(btnDetails);
+              mainDiv.appendChild(userDiv);
+            }
+            document.body.appendChild(mainDiv);
+
+          })
+
+</script>
+
+</body>
+</html>
