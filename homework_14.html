@@ -86,8 +86,67 @@
 
         })
       }
+      function study(itCourses) {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          if(itCourses) {
+            resolve("Watching a lecture and taking notes")
+          } else {
+            reject("Just watching")
+          }
+        }, 200)
+      })
+      }
+
+      function homework(practice) {
+      return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if(practice) {
+          resolve("Doing homework in Webstorm")
+        } else {
+          reject ("Tasks are too complicated to resolve :( ")
+        }
+      }, 100)
+    })
+      }
 
 
+      function check(mentor) {
+    return new Promise((resolve, reject) => {
+      setTimeout(()=> {
+        if(mentor) {
+          resolve("Sending my homework to mentor who will check it")
+        } else {
+          reject("Mentor is so busy that he doesn't have time to check my homework")
+        }
+      }, 200)
+    })
+      }
+
+      function correct(errors) {
+    return new Promise ((resolve, reject) => {
+      setTimeout(() => {
+        if(errors) {
+          resolve("If a mentor has any remarks, I'll fix the errors")
+        } else {
+          reject ("No remarks from mentor")
+          }
+        }, 100)
+      })
+      }
+
+
+        function sleeping(dreams) {
+    return new Promise ((resolve, reject) => {
+      setTimeout(() => {
+        if(dreams) {
+          resolve("Finally, I go sleeping")
+        } else {
+          reject("I am still doing my homework")
+        }
+      }, 200)
+    })
+        }
         getUp(true)
                 .then(start => {
                   console.log(start);
@@ -103,7 +162,7 @@
 
                 })
                 .then(eat => {
-                  console.log(eat)
+                  console.log(eat);
 
                   return leisure("Reading")
                 })
@@ -115,9 +174,42 @@
                 })
 
                 .then(back => {
-                  console.log(back)
+                  console.log(back);
 
                   return home("Going back")
+                })
+                .then(eLearn => {
+                  console.log(eLearn);
+
+                  return study("Okten IT Academy")
+                })
+
+                .then(eLearn2 => {
+                  console.log(eLearn2);
+
+                  return homework("Doing practical tasks")
+                })
+
+                .then(eLearn3 => {
+                  console.log(eLearn3);
+
+                  return check ("Revising both classwork and homework")
+                })
+
+                .then(eLearn4 => {
+                  console.log(eLearn4)
+
+                  return correct ("Analysis")
+                 })
+
+                .then(sweetDreams => {
+                  console.log(sweetDreams);
+
+                  return sleeping("Relaxing")
+                })
+
+                .then(midnight => {
+                  console.log(midnight)
                 })
 
 
