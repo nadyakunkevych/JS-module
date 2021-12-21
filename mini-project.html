@@ -81,9 +81,16 @@ fetch ("https://jsonplaceholder.typicode.com/users")
             btnDetails.classList.add("btn")
             btnDetails.innerText = "click for details";
 
+
             btnDetails.onclick = function () {
-              document.location.href = "user-details.html";
+              const userId = 'key';
+              let userIdArray = [];
+              userIdArray.push(usersArrayElement);
+              localStorage.setItem("key", JSON.stringify(userIdArray));
+              document.location.href = "user-details.html"
+
               }
+
 
             userDiv.appendChild(btnDetails);
             mainDiv.appendChild(userDiv);

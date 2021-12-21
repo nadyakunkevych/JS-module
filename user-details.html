@@ -31,15 +31,13 @@
 </body>
 
 <script>
-  fetch("https://jsonplaceholder.typicode.com/users")
-          .then(response => response.json())
-          .then (users => {
-            let mainDiv = document.createElement('div');
-            mainDiv.classList.add('main');
-            for (const user of users) {
-              let userDiv = document.createElement('div');
-              userDiv.classList.add('user');
-              userDiv.innerHTML = `
+ let userArray = JSON.parse(localStorage.getItem("key"));
+ for (const user of userArray) {
+   let mainDiv = document.createElement("div");
+   mainDiv.classList.add("main");
+   let userDiv = document.createElement('div');
+   userDiv.classList.add('user');
+   userDiv.innerHTML = `
             <h1>ID:${user.id}</h1>
             <h1>NAME:${user.name}</h1>
             <h1>USERNAME:${user.username}</h1>
@@ -58,11 +56,11 @@
                 </p>
             </h1>`
 
-              mainDiv.appendChild(userDiv);
+   mainDiv.appendChild(userDiv);
 
-            }
-            document.body.appendChild(mainDiv);
-          })
+   document.body.appendChild(mainDiv);
+
+ }
 
 
 </script>
