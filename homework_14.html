@@ -199,7 +199,7 @@
                 })
 
                 .then(eLearn4 => {
-                  console.log(eLearn4)
+                  console.log(eLearn4);
 
                   return correct ("Analysis")
                  })
@@ -211,12 +211,12 @@
                 })
 
                 .then(midnight => {
-                  console.log(midnight)
+                  console.log(midnight);
                 })
 
 
                 .catch(reason => {
-                  console.log("error", reason)
+                  console.log("error", reason);
                 })
 
 
@@ -270,6 +270,194 @@
 
          myRoutine()
 
+
+
+  // code with callback
+
+  function gettingUp (dailyRoutine, callback) {
+      setTimeout(() => {
+        if (dailyRoutine) {
+          console.log ("Washing up and beauty treatments");
+          callback()
+        } else {
+          console.log("Go sleeping for some 10 min at least")
+
+        }
+      }, 400)
+  }
+
+  gettingUp(true, ()=> {
+    console.log("Beauty procedures");
+
+  });
+
+  function workOut (running, callback) {
+      setTimeout(() => {
+        if(running) {
+          console.log ("Exercising to keep fit");
+          callback()
+        } else {
+          console.log ("Too lazy to workout")
+          callback()
+        }
+      }, 300)
+
+  }
+
+  workOut(true, ()=> {
+    console.log("Sport")
+  })
+
+
+
+  function breakFast (eating, callback) {
+      setTimeout(() => {
+        if(eating) {
+          console.log("Making a healthy sandwich");
+          callback();
+        } else {
+          console.log("I am hungry")
+          callback();
+        }
+      }, 150)
+  }
+
+  breakFast(true, ()=> {
+    console.log("Breakfast")
+  })
+
+
+  function leisureTime (reading, callback) {
+      setTimeout(() => {
+        if (reading) {
+          console.log("Reading a book");
+          callback();
+        } else {
+          console.log("Watching Youtube instead")
+          callback();
+        }
+      }, 3000)
+  }
+
+  leisureTime(true,()=> {
+    console.log("Reading time")
+  })
+
+  function workHard(taxi, callback) {
+      setTimeout(() => {
+        if (taxi) {
+          console.log("Going to work")
+          callback();
+        } else {
+          console.log("Having a day off")
+          callback();
+        }
+      }, 2000)
+  }
+
+  workHard(true, ()=> {
+    console.log("Taking taxi to work")
+  })
+
+  function backHome(back, callback) {
+      setTimeout(() => {
+        if (back) {
+          console.log("Going home");
+          callback();
+        } else {
+          console.log("Still working");
+          callback();
+        }
+      }, 300)
+  }
+
+  backHome(true, ()=> {
+    console.log("Coming back home after a hard-working day")
+  })
+
+
+  function studyTime (itCourses, callback) {
+      setTimeout(() => {
+        if(itCourses) {
+          console.log("Watching a lecture and taking notes");
+          callback();
+        } else {
+          console.log("Just watching");
+          callback();
+
+        }
+      }, 400)
+  }
+
+  studyTime(true, ()=> {
+    console.log("Watch Okten lectures on Youtube before doing homework")
+  })
+
+  function homeWork(practice, callback) {
+      setTimeout(() => {
+        if(practice) {
+          console.log("Doing homework in Webstorm");
+          callback();
+        } else {
+          console.log ("Tasks are too complicated to resolve :( ");
+          callback();
+        }
+      }, 100)
+  }
+  homeWork(true, ()=>{
+    console.log("Practice makes it perfect")
+  })
+
+
+  function checking(mentor, callback) {
+      setTimeout(()=> {
+        if(mentor) {
+          console.log("Sending my homework to mentor who will check it");
+          callback();
+        } else {
+          console.log("Mentor is so busy that he doesn't have time to check my homework");
+          callback();
+        }
+      }, 200)
+  }
+
+  checking(true, ()=>{
+    console.log("Expecting to get a great feedback from mentor;) ")
+  });
+
+
+  function correcting(errors, callback) {
+      setTimeout(() => {
+        if(errors) {
+          console.log("If a mentor has any remarks, I'll fix the errors");
+          callback();
+        } else {
+          console.log ("No remarks from mentor");
+          callback();
+        }
+      }, 100)
+  }
+  correcting(true, ()=> {
+    console.log("Implementing fix")
+  })
+
+
+  function goSleep(dreams, callback) {
+      setTimeout(() => {
+        if(dreams) {
+          console.log("Finally, I go sleeping");
+          callback();
+        } else {
+          console.log("I am still doing my homework");
+          callback();
+
+        }
+      }, 200)
+    }
+
+    goSleep(true, ()=> {
+      console.log("Sweet dreams")
+    })
 
 
 </script>
