@@ -5,22 +5,75 @@
   <title>User-details</title>
 
   <style>
+
+
     .main{
       display: flex;
-      width: 400px;
       justify-content: center;
-      flex-direction: column;
-
     }
-    .user{
+
+    .user {
+      width: 500px;
       display: flex;
       flex-direction: column;
-      background: skyblue;
+      background-color: lightgoldenrodyellow;
+      color: darkolivegreen;
+      align-items: center;
+
+    }
+    .btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid goldenrod;
+      border-radius: 10px;
+      box-shadow: 5px 5px 2px 1px  rgba(0, 0, 255, .2);
+      width: 90%;
+      font-size: 20px;
+
+    }
+
+    button:hover {
+      background-color: lightblue;
+    }
+
+    .post{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 300px;
+      height: 180px;
+      border: darkolivegreen dotted 2px;
+      padding: 5px;
+    }
+
+    .postTitle {
+      display: flex;
+      width: 1700px;
+      justify-content: center;
+      flex-wrap: wrap;
       border-radius: 20px;
       margin: 20px;
-      padding: 10px;
-      color: #090950;
+      padding: 20px;
+      background: palegoldenrod;
+      column-gap: 20px;
+      row-gap: 20px;
     }
+
+    .btnPost {
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid goldenrod;
+      border-radius: 10px;
+      box-shadow: 5px 5px 2px 1px  rgba(0, 0, 255, .2);
+      width: 90%;
+      font-size: 20px;
+    }
+
+
   </style>
 
 
@@ -31,37 +84,75 @@
 </body>
 
 <script>
- let userArray = JSON.parse(localStorage.getItem("key"));
- for (const user of userArray) {
-   let mainDiv = document.createElement("div");
-   mainDiv.classList.add("main");
-   let userDiv = document.createElement('div');
-   userDiv.classList.add('user');
-   userDiv.innerHTML = `
-            <h1>ID:${user.id}</h1>
-            <h1>NAME:${user.name}</h1>
-            <h1>USERNAME:${user.username}</h1>
-            <h1><ins>ADDRESS:</ins>
+  let userArray = JSON.parse(localStorage.getItem("key"));
+  for (const user of userArray) {
+    let mainDiv = document.createElement("div");
+    mainDiv.classList.add("main");
+    let userDiv = document.createElement('div');
+    userDiv.classList.add('user');
+    userDiv.innerHTML = `
+            <h1> <strong>  ID: </strong>  ${user.id}</h1>
+            <p> <strong> NAME:</strong> ${user.name}</p>
+            <p><strong>  USERNAME:</strong>  ${user.username}</p>
+            <h1><ins>ADDRESS :</ins> </h1>
                 <p>
-                <br>STREET: ${user.address.street}</br>
-                <br>SUITE:${user.address.suite}</br>
-                <br>CITY:${user.address.city}</br>
-                <br>ZIPCODE:${user.address.zipcode}</br>
-                <br><ins>GEO:</ins>
+                <br> <strong> STREET:</strong>  ${user.address.street} </br>
+               <br> <strong>  SUITE: </strong> ${user.address.suite}</br>
+                 <br><strong> CITY:</strong>  ${user.address.city}  </br>
+                  <br> <strong> ZIPCODE: </strong> ${user.address.zipcode}  </br> </p>
+                <h1><ins> GEO: </ins> </h1>
                     <p>
-                    <br>lat:${user.address.geo.lat}</br>
-                    <br>lng:${user.address.geo.lng}</br>
+                    <br> <strong> LAT:</strong>  ${user.address.geo.lat}</br>
+                    <br> <strong> LNG: </strong> ${user.address.geo.lng}</br>
                     </p>
-                </br>
+
                 </p>
             </h1>`
 
-   mainDiv.appendChild(userDiv);
 
-   document.body.appendChild(mainDiv);
 
- }
+    let btnPost = document.createElement("button");
+    btnPost.classList.add('btn')
+    btnPost.innerText = "Post of current user";
 
+
+    btnPost.onclick = function () {
+      fetch(`https://jsonplaceholder.typicode.com/users/${user.id}/posts`)
+              .then(response => response.json())
+              .then(posts => {
+                let postTitles = document.createElement('div');
+                postTitles.classList.add('postTitle');
+                for (const post of posts) {
+                  let postDiv = document.createElement('div');
+                  postDiv.classList.add('post');
+                  postDiv.innerHTML = `<h2>TITLE: ${post.title}</h2>`;
+                  let btnComments = document.createElement('button');
+                  btnComments.classList.add('btnPost')
+                  btnComments.innerText = 'Post details';
+
+
+                  btnComments.onclick = function () {
+                    let key = 'postKey';
+                    let postID = [];
+                    postID.push(post);
+                    localStorage.setItem('postKey', JSON.stringify(postID));
+
+                    document.location.href = "post-details.html"
+                  }
+
+                  postDiv.appendChild(btnComments);
+                  postTitles.appendChild(postDiv);
+                  userDiv.appendChild(postTitles);
+                }
+                btnPost.disabled = true;
+              })
+    }
+
+    userDiv.append(btnPost)
+    mainDiv.appendChild(userDiv)
+    document.body.appendChild(mainDiv)
+  }
 
 </script>
+
 </html>

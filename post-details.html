@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Post-details</title>
+  <style>
+
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      background: #bbdebb;
+      border: 2px solid navy;
+
+    }
+    .mainPost {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      background: #bbdebb;
+
+
+    }
+    .comments {
+      display: flex;
+      flex-wrap: wrap;
+      border: 2px solid navy;
+    }
+
+  </style>
+</head>
+<body>
+
+
+<script>
+
+  let mainDiv = document.createElement('div');
+  mainDiv.classList.add("main");
+  let postArray = JSON.parse(localStorage.getItem('postKey'));
+  for (const post of postArray) {
+    let postDiv = document.createElement('div');
+    postDiv.classList.add('post');
+    postDiv.innerHTML = `
+            <h2>ID: ${post.id}</h2>
+            <h2>TITLE: ${post.title}</h2>
+            <h2>BODY: ${post.body}</h2>`
+
+    mainDiv.appendChild(postDiv);
+    document.body.appendChild(mainDiv)
+
+
+    fetch(`https://jsonplaceholder.typicode.com/posts/${post.id}/comments`)
+    .then(response => response.json())
+            .then(comments => {
+              // let mainPostDiv = document.createElement('div');
+              // mainPostDiv.classList.add("mainPost");
+              for (const comment of comments) {
+                let mainPostDiv = document.createElement('div');
+                mainPostDiv.classList.add("mainPost");
+                let divComments = document.createElement('div');
+                divComments.classList.add('comments');
+                divComments.innerHTML = `
+                                        <h3>ID: ${comment.id}</h3>
+                                        <h4>Name: ${comment.name}</h4>
+                                        <h3>email: ${comment.email}</h3>
+                                        <h6>Body: ${comment.body}</h6>
+                                        `;
+               mainPostDiv.appendChild(divComments);
+               document.body.appendChild(mainPostDiv);
+              }
+            })
+  }
+
+
+
+</script>
+</body>
+</html>
