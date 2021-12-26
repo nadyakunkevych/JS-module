@@ -112,7 +112,7 @@
 
 
     let btnPost = document.createElement("button");
-    btnPost.classList.add('btn')
+    btnPost.classList.add("btn")
     btnPost.innerText = "Post of current user";
 
 
@@ -120,15 +120,15 @@
       fetch(`https://jsonplaceholder.typicode.com/users/${user.id}/posts`)
               .then(response => response.json())
               .then(posts => {
-                let postTitles = document.createElement('div');
-                postTitles.classList.add('postTitle');
+                let postTitles = document.createElement("div");
+                postTitles.classList.add("postTitle");
                 for (const post of posts) {
-                  let postDiv = document.createElement('div');
-                  postDiv.classList.add('post');
+                  let postDiv = document.createElement("div");
+                  postDiv.classList.add("post");
                   postDiv.innerHTML = `<h2>TITLE: ${post.title}</h2>`;
-                  let btnComments = document.createElement('button');
-                  btnComments.classList.add('btnPost')
-                  btnComments.innerText = 'Post details';
+                  let btnComments = document.createElement("button");
+                  btnComments.classList.add("btnPost")
+                  btnComments.innerText = "Post details";
 
 
                   btnComments.onclick = function () {

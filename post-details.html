@@ -35,12 +35,12 @@
 
 <script>
 
-  let mainDiv = document.createElement('div');
+  let mainDiv = document.createElement("div");
   mainDiv.classList.add("main");
-  let postArray = JSON.parse(localStorage.getItem('postKey'));
+  let postArray = JSON.parse(localStorage.getItem("postKey"));
   for (const post of postArray) {
-    let postDiv = document.createElement('div');
-    postDiv.classList.add('post');
+    let postDiv = document.createElement("div");
+    postDiv.classList.add("post");
     postDiv.innerHTML = `
             <h2>ID: ${post.id}</h2>
             <h2>TITLE: ${post.title}</h2>
@@ -54,10 +54,10 @@
     .then(response => response.json())
             .then(comments => {
               for (const comment of comments) {
-                let mainPostDiv = document.createElement('div');
+                let mainPostDiv = document.createElement("div");
                 mainPostDiv.classList.add("mainPost");
-                let divComments = document.createElement('div');
-                divComments.classList.add('comments');
+                let divComments = document.createElement("div");
+                divComments.classList.add("comments");
                 divComments.innerHTML = `
                                         <h3>ID: ${comment.id}</h3>
                                         <h4>Name: ${comment.name}</h4>
