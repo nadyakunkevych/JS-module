@@ -7,25 +7,25 @@
 
 
     .main {
-      display: flex;
-      flex-direction: column;
+      color: darkgreen;
       width: 400px;
-      background: #bbdebb;
-      border: 2px solid navy;
-
     }
+
     .mainPost {
       display: flex;
-      flex-direction: column;
-      width: 400px;
-      background: #bbdebb;
-
-
+      float: left;
     }
+
     .comments {
-      display: flex;
-      flex-wrap: wrap;
-      border: 2px solid navy;
+      width: 400px;
+      border: 2px solid darkgreen;
+      background: #bbdebb;
+      color: darkgreen;
+      margin-top: 60px;
+      margin-right: 10px;
+      text-align: center;
+      box-shadow: 12px 12px 2px 1px palegoldenrod;
+
     }
 
   </style>
@@ -53,8 +53,6 @@
     fetch(`https://jsonplaceholder.typicode.com/posts/${post.id}/comments`)
     .then(response => response.json())
             .then(comments => {
-              // let mainPostDiv = document.createElement('div');
-              // mainPostDiv.classList.add("mainPost");
               for (const comment of comments) {
                 let mainPostDiv = document.createElement('div');
                 mainPostDiv.classList.add("mainPost");
